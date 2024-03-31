@@ -8,6 +8,6 @@
 - CSS
 	- Flexbox
 	- Grids
-	- Boostrap
+	- Bootstrap
 - git
 - GitHub
