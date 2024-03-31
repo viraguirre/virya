@@ -7,23 +7,26 @@
 }
 
 /**generales**/
-header,button,h1,h2,h3{
+header,button,h1,h2,h3,h4,h5,h6,p{
     font-family: "Amaranth", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
+h2,h4,h5,header{
+    text-transform: uppercase;
+}
 header,footer{
     background-color: #69A898;
     display: flex;
-    width: 100%;
+    width:100%;
     flex-direction: row;
     color: white;
     align-items: center;
+    font-size: 100%;
 }
 header{
     height: 9.7rem;
     justify-content: space-around;
-    font-size: 1.5rem;
     position: sticky;
     top: 0;
 }
@@ -31,7 +34,7 @@ ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 4rem;
 }
 footer{
     height: 10rem;
@@ -47,18 +50,17 @@ button{
     border-radius: 1.25rem;
     margin: 1rem;
 }
-h1,h2,a{
+h1,h2,h4,a{
     color: white;
     text-shadow: 0px 2px 2px #333333;
 }
 h1{
     width: 100%;
-    height: 24.4375rem;
     font-size: 1.5rem;
 }
 h2{
     width: 100%;
-    height: 5%;
+    height: 3%;
     margin: 0rem 0rem 2rem 0rem;
     padding: 1rem 0rem;
     font-size: 2.5rem;
@@ -69,14 +71,26 @@ h3{
     color: #333333;
     font-size: 2rem;
 }
+h5,h6{
+    color: #333333;
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 2rem;
+    padding: 1rem;
+}
+h5{
+    font-size: 1.5rem;
+}
+h6{
+    text-transform: capitalize;
+}
 section,article,div{
     text-align: center;
 }
 p{
     color: #333333;
-    font-family: "Andika", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 10;
     font-size: 1.7rem;
     padding-bottom: 2rem;
 }
@@ -87,9 +101,10 @@ p{
     background-image: url(../assets/fondo-index.png);
     background-size: 100% 100%;
     margin-bottom: 2rem;
+    background-repeat: no-repeat;
 }
 .titulo-index{
-    padding: 14rem 0rem 0rem 2rem;
+    padding: 14rem 0rem 0rem 3rem;
 }
 .virya{
     width: 100%;
@@ -111,32 +126,66 @@ p{
     text-align: left;
     background-image: url(../assets/fondo-formaciones.png);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .titulo-formaciones{
     padding: 9rem 0rem 0rem 20rem;
 }
-.formaciones div{
+.profesorado{
+    display: grid;
+    width: 100%;
+    grid-template-columns: (repeat(3,1fr));
+    grid-template-rows: repeat(2,1fr) ;
+    grid-template-areas:
+        "prof__desc prof__desc prof__desc"
+        "prof__ic1 prof__ic2 prof__ic3";
+    justify-items: center;
+    padding: 0rem 5rem;
+}
+.prof__desc{
+    grid-area: prof__desc;
+}
+.prof__ic1{
+    grid-area: prof__ic1;
+}
+.prof__ic2{
+    grid-area: prof__ic2;
+}
+.prof__ic3{
+    grid-area: prof__ic3;
+}
+
+.autoconocimiento{
+    display: grid;
+    width: 100%;
+    grid-template-columns: (repeat(3,1fr));
+    grid-template-rows: repeat(2,6rem) ;
+    grid-template-areas:
+        "auto__desc auto__desc auto__desc"
+        "auto__img1 auto__img2 auto__img3";
+    gap: 1rem;
+    padding-bottom: 13rem;
+    align-content: center;
+    justify-content: center;
+}
+.auto__desc{
+    grid-area: auto__desc;
+}
+.auto__img1{
+    grid-area: auto__img1;
+}
+.auto__img2{
+    grid-area: auto__img2;
+}
+.auto__img3{
+    grid-area: auto__img3;
+}
+
+.taller{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-}
-.formaciones div div{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-}
-.prof-texto{
-    width: 100%;
-    padding: 0rem 10rem 1rem 10rem;
-}
-.autoconocimiento{
-    justify-content: space-around;
-    margin: 2rem 0rem;
-}
-.taller{
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 2rem;
 }
 
@@ -145,25 +194,131 @@ p{
     text-align: left;
     background-image: url(../assets/fondo-horarios.png);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .titulo-horarios{
     padding: 8rem 0rem 0rem 2rem;
 }
-.grilla{
-    size-adjust: 50%;
+.grid-horarios{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: (repeat(5,1fr));
+    grid-template-rows: 4.5rem 5.3rem 7rem repeat(3,5.3rem) ;
+    grid-template-areas:
+        "div1 div2 div3 div4 div5"
+        "div6 div7 div8 . div9"
+        ". . div10 . div11"
+        ". div12 . div13 ."
+        "div14 . div15 . div16"
+        ". div17 . div18 ."
+        "div19 div20 div21 div22 div23";
+    gap: 1rem 3.5rem;
+    margin-bottom: 1rem;
 }
-.imagenes-horarios{
-    margin: 1rem 0rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.grid-horarios div{
+    border-radius: 20px;
+    border-color: #333333;
+    text-align: center;
+}
+
+.grid-horarios div p{
+    font-size: 1rem;
+}
+.div1{
+    background-color: #1d9275;
+    grid-area: div1;
+}
+.div2{
+    background-color: #1d9275;
+    grid-area: div2;
+}
+.div3{
+    background-color: #1d9275;
+    grid-area: div3;
+}
+.div4{
+    background-color: #1d9275;
+    grid-area: div4;
+}
+.div5{
+    background-color: #1d9275;
+    grid-area: div5;
+}
+.div6{
+    background-color:#66b19f53;
+    grid-area: div6;
+}
+.div7{
+    background-color:#66b19f53;
+    grid-area: div7;
+}
+.div8{
+    background-color:#66b19f53;
+    grid-area: div8;
+}
+.div9{
+    background-color:#66b19f53;
+    grid-area: div9;
+}
+.div10{
+    background-color:#66b19f53;
+    grid-area: div10;
+}
+.div11{
+    background-color:#66b19f53;
+    grid-area: div11;
+}
+.div12{
+    background-color:#66b19f53;
+    grid-area: div12;
+}
+.div13{
+    background-color:#66b19f53;
+    grid-area: div13;
+}
+.div14{
+    background-color:#66b19f53;
+    grid-area: div14;
+}
+.div15{
+    background-color:#66b19f53;
+    grid-area: div15;
+}
+.div16{
+    background-color:#66b19f53;
+    grid-area: div16;
+}
+.div17{
+    background-color:#66b19f53;
+    grid-area: div17;
+}
+.div18{
+    background-color:#66b19f53;
+    grid-area: div18;
+}
+.div19{
+    grid-area: div19;
+}
+.div20{
+    grid-area: div20;
+}
+.div21{
+    grid-area: div21;
+}
+.div22{
+    grid-area: div22;
+}
+.div23{
+    grid-area: div23;
 }
 
 /**blog**/
 .background-blog{
     text-align: right;
     background-image: url(../assets/fondo-blog.png);
-    background-size: 100% 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .titulo-blog{
     padding: 18rem 2rem 0rem 0rem;
@@ -194,7 +349,8 @@ p{
 .background-contacto{
     text-align: center;
     background-image: url(../assets/fondo-contacto.png);
-    background-size: 100% 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .titulo-contacto{
     padding: 18rem 0rem 0rem 0rem;
