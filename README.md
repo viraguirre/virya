@@ -11,3 +11,14 @@
 	- Bootstrap
 - git
 - GitHub
+
+### Mockups
+[![](https://raw.githubusercontent.com/viraguirre/viraguirre/main/Screenshot%20figma%201.png)](http://https://raw.githubusercontent.com/viraguirre/viraguirre/main/Screenshot%20figma%201.png)
+
+[![](https://raw.githubusercontent.com/viraguirre/viraguirre/main/Screenshot%20figma%202.png)](http://https://raw.githubusercontent.com/viraguirre/viraguirre/main/Screenshot%20figma%202.png)
+
+[![](https://raw.githubusercontent.com/viraguirre/viraguirre/main/Screenshot%20figma%203.png)](http://https://raw.githubusercontent.com/viraguirre/viraguirre/main/Screenshot%20figma%203.png)
+
+[![](https://raw.githubusercontent.com/viraguirre/viraguirre/main/Screenshot%20figma%204.png)](http://https://raw.githubusercontent.com/viraguirre/viraguirre/main/Screenshot%20figma%204.png)
+
+[![](https://raw.githubusercontent.com/viraguirre/viraguirre/main/Screenshot%20figma%205.png)](http://https://raw.githubusercontent.com/viraguirre/viraguirre/main/Screenshot%20figma%205.png)
