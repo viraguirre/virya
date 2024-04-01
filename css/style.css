@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
 /**generales**/
@@ -25,7 +24,7 @@ header,footer{
     font-size: 100%;
 }
 header{
-    height: 9.7rem;
+    height: 7rem;
     justify-content: space-around;
     position: sticky;
     top: 0;
@@ -35,9 +34,10 @@ ul{
     display: flex;
     flex-direction: row;
     gap: 4rem;
+    text-decoration: none;
 }
 footer{
-    height: 10rem;
+    height: 5rem;
     justify-content: space-evenly;
 }
 button{
@@ -57,13 +57,14 @@ h1,h2,h4,a{
 h1{
     width: 100%;
     font-size: 1.5rem;
+    height: 15rem;
 }
 h2{
     width: 100%;
     height: 3%;
     margin: 0rem 0rem 2rem 0rem;
     padding: 1rem 0rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     background-color: #69A898;
     text-align: center;
 }
@@ -73,11 +74,11 @@ h3{
 }
 h5,h6{
     color: #333333;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 h4{
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
 }
 h5{
     font-size: 1.5rem;
@@ -104,7 +105,7 @@ p{
     background-repeat: no-repeat;
 }
 .titulo-index{
-    padding: 14rem 0rem 0rem 3rem;
+    padding: 9rem 0rem 3rem 3rem;
 }
 .virya{
     width: 100%;
@@ -117,8 +118,15 @@ p{
 }
 .section-eventos section{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+}
+
+.eventos-car{
+    width: 30%;
+    height: 30%;
+    margin: 1rem 33%;
+    display: flex;
+    flex-direction: row;
 }
 
 /**formaciones**/
@@ -129,7 +137,7 @@ p{
     background-repeat: no-repeat;
 }
 .titulo-formaciones{
-    padding: 9rem 0rem 0rem 20rem;
+    padding: 5rem 0rem 9rem 10rem;
 }
 .profesorado{
     display: grid;
@@ -163,7 +171,7 @@ p{
     grid-template-areas:
         "auto__desc auto__desc auto__desc"
         "auto__img1 auto__img2 auto__img3";
-    gap: 1rem;
+    gap: 0.5rem;
     padding-bottom: 13rem;
     align-content: center;
     justify-content: center;
@@ -188,6 +196,10 @@ p{
     justify-content: space-evenly;
     margin-bottom: 2rem;
 }
+.prof__desc,.prof__ic1,.prof__ic2,.prof__ic3,.taller__img1,.taller__img2,.taller__desc,.auto__desc,.auto__img1,.auto__img2,.auto__img3{
+    width: 100%;
+    height: 100%;
+}
 
 /**horarios**/
 .background-horarios{
@@ -201,10 +213,7 @@ p{
 }
 .grid-horarios{
     display: grid;
-    width: 100%;
-    justify-content: center;
-    grid-template-columns: (repeat(5,1fr));
-    grid-template-rows: 4.5rem 5.3rem 7rem repeat(3,5.3rem) ;
+    grid-template-rows: 3rem 5.3rem 7rem repeat(3,5.3rem) ;
     grid-template-areas:
         "div1 div2 div3 div4 div5"
         "div6 div7 div8 . div9"
@@ -213,17 +222,21 @@ p{
         "div14 . div15 . div16"
         ". div17 . div18 ."
         "div19 div20 div21 div22 div23";
-    gap: 1rem 3.5rem;
+    gap: 0.5rem 0.5rem;
     margin-bottom: 1rem;
 }
 .grid-horarios div{
     border-radius: 20px;
-    border-color: #333333;
-    text-align: center;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
-
 .grid-horarios div p{
     font-size: 1rem;
+}
+.elem{
+    height: 100%;
+    width: 100%;
 }
 .div1{
     background-color: #1d9275;
@@ -317,11 +330,11 @@ p{
 .background-blog{
     text-align: right;
     background-image: url(../assets/fondo-blog.png);
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .titulo-blog{
-    padding: 18rem 2rem 0rem 0rem;
+    padding: 10rem 2rem 0rem 0rem;
 }
 .article-uno,.article-tres{
     text-align: left;
@@ -341,22 +354,28 @@ p{
     display: flex;
     flex-direction: row-reverse;
 }
-.art-img{
+.art-img,.article-uno,.article-dos,.article-tres,.article-cuatro{
     width: 50%;
+    height: 50%;
+    padding: 1rem;
+}
+.art_img{
+    width: 100%;
+    height: 100%;
 }
 
 /**contacto**/
 .background-contacto{
     text-align: center;
     background-image: url(../assets/fondo-contacto.png);
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .titulo-contacto{
-    padding: 18rem 0rem 0rem 0rem;
+    padding: 8rem 0rem 0rem 0rem;
 }
 .contacto{
-    margin-left: 3rem;
+    margin-left: 1rem;
     display: flex;
     flex-direction: row;
 }
@@ -365,4 +384,11 @@ p{
 }
 .contacto iframe{
     margin: 0rem 0rem 3rem 4rem;
+    width: 50%;
 }
+.red-social{
+    width: 100%;
+    height: 90%;
+}
+
+@media(max-width:780)
