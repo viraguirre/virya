@@ -9,10 +9,13 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="contenedor">
             <a href="#"><img src="./assets/logo-barra.png"></a>
-        </div>
-        <div>   
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
             <nav>
                 <ul>
                     <li><a href="./pages/formaciones-y-talleres.html">formaciones y talleres</a></li>
@@ -21,7 +24,7 @@
                     <li><a href="./pages/contacto.html">contacto</a></li>
                 </ul>
             </nav>
-        </div> 
+        </div>
     </header>
     <main>
         <section class="background-index">
@@ -30,7 +33,7 @@
         </section>
         <section>
             <article>
-                <img src="./assets/logo-oscuro.png" alt="mandala beige logo virya yoga studio">
+                <img class="mandala" src="./assets/logo-oscuro.png" alt="mandala beige logo virya yoga studio">
                 <p class="virya">La fuerza se construye y se entrena, igual que el equilibrio, la elasticidad o la coordinación. En el momento que tomas la decisión de empezar a cuidarte                y practicar yoga, has emprendido sin saberlo el camino de VÎrya:
                 la senda del guerrero de la Luz.</p>
                 <button><a href="./pages/contacto.html">Quiero inscribirme</a></button>
@@ -39,8 +42,9 @@
         <section class="section-eventos">
             <h2>proximos eventos</h2>
             <section class="eventos-car">
-                <div>
-                    <h2>reserva tu lugar</h2>
+                <div class="text-car-desc">
+                    <h3 class="text-car">Enterate de todos los eventos <br> que planeamos desde Virya Yoga Studio para <br>nuestra comunidad.</h3>
+                    <img class="img-car" src="./assets/medita.png" alt="logo verde hombre meditando">
                 </div>
                 <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
@@ -80,9 +84,6 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-                  <div>
-                    <img src="./assets/logo-barra.png" alt="">
-                  </div>
             </section>
         </section>
     </main>
@@ -99,7 +100,7 @@
             <img src="./assets/logo-pie.png">
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html> 
