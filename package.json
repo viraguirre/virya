@@ -1,0 +1,17 @@
+{
+  "name": "virya-yogastudio-proyecto-dw",
+  "version": "1.0.0",
+  "description": "> The project it´s based on a future yoga studio to be open in the area. It´s the first project I have created, from beggining to end including the design, as I was learning during my web development classes at CODERHOUSE platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss ./sass/style.scss ./css/style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.0"
+  }
+}

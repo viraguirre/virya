@@ -1,0 +1,25 @@
+/**utilities**/
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+/**base**/
+@import "./base/reset";
+@import "./base/generales";
+@import "./base/tipografias";
+
+/**layout**/
+@import "./layout/header";
+@import "./layout/mainIndex";
+@import "./layout/mainFormaciones";
+@import "./layout/mainHorarios";
+@import "./layout/mainBlog";
+@import "./layout/mainContacto";
+@import "./layout/footer";
+@import "./layout/mediaQueries/media768";
+@import "./layout/mediaQueries/media320";
+
+
+/**componentes**/
+@import "./components/bootstrap";
+@import "./components/navBar";

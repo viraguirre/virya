@@ -1,0 +1,141 @@
+.mainHorarios{
+    .backgroundHorarios{
+    text-align: left;
+    background-image: url(../assets/fondo-horarios.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+        .tituloHorarios{
+            height: 25rem;
+            width: 100%;
+            margin: 0;
+            padding: 7rem 0rem 3rem 3rem;
+            @include font(amaranth,$l,100,none,map-get($paletaColores,fuentePrincipal),.125rem .125rem map-get($paletaColores,fuenteSecundariaclara));
+            &:first-letter{
+                text-transform: capitalize;
+            }
+        }
+    .grid{
+        .gridHorarios{
+            @include grid(repeat(5,1fr),2.5rem 6.3rem 8rem repeat(3,6.3rem),center,center,"div1 div2 div3 div4 div5"
+            "div6 div7 div8 . div9"
+            ". . div10 . div11"
+            ". div12 . div13 ."
+            "div14 . div15 . div16"
+            ". div17 . div18 ."
+            "div19 div20 div21 div22 div23");
+            gap: 0.5rem 0.5rem;
+            margin: 0 1rem 1rem 1rem;
+            .div1{
+                background-color: map-get($paletaColores,fondoOscuro);
+                grid-area: div1;
+            }
+            .div2{
+                background-color: map-get($paletaColores,fondoOscuro);
+                grid-area: div2;
+            }
+            .div3{
+                background-color: map-get($paletaColores,fondoOscuro);
+                grid-area: div3;
+            }
+            .div4{
+                background-color: map-get($paletaColores,fondoOscuro);
+                grid-area: div4;
+            }
+            .div5{
+                background-color: map-get($paletaColores,fondoOscuro);
+                grid-area: div5;
+            }
+            .div6{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div6;
+            }
+            .div7{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div7;
+            }
+            .div8{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div8;
+            }
+            .div9{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div9;
+            }
+            .div10{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div10;
+            }
+            .div11{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div11;
+            }
+            .div12{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div12;
+            }
+            .div13{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div13;
+            }
+            .div14{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div14;
+            }
+            .div15{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div15;
+            }
+            .div16{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div16;
+            }
+            .div17{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div17;
+            }
+            .div18{
+                background-color:map-get($paletaColores,fondoClaro);
+                grid-area: div18;
+            }
+            .div19{
+                grid-area: div19;
+            }
+            .div20{
+                grid-area: div20;
+            }
+            .div21{
+                grid-area: div21;
+            }
+            .div22{
+                grid-area: div22;
+            }
+            .div23{
+                grid-area: div23;
+            }
+            div{
+                border-radius: .375rem;
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                h3{
+                    @include font(amaranth,$xl,100,uppercase,map-get($paletaColores,fuentePrincipal),none);
+                }
+                h4{
+                    @include font(amaranth,$m,100,uppercase,map-get($paletaColores,fuenteSecundaria),none);
+                }
+                h5{
+                    @include font(amaranth,$s,100,capitalize,map-get($paletaColores,fuenteSecundaria),none);
+                }
+                p{
+                    @include font(amaranth,$s,100,capitalize,map-get($paletaColores,fuenteSecundaria),none);
+                    .elem{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

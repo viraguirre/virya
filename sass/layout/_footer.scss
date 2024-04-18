@@ -1,0 +1,12 @@
+footer{
+    height: 5rem;
+    background-color: map-get($paletaColores,fondoBarras);
+    width:100%;
+    @include flex(row,space-evenly,center,1.25rem);
+    div{
+        ul{
+            @include flex(row,space-evenly,center,1.25rem);
+        }
+    }
+
+}

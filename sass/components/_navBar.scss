@@ -1,0 +1,16 @@
+.navBar{
+    ul{
+        @include flex (row,center,center,1rem);
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                @include font($fuentePrincipal,$s,100,uppercase,map-get($paletaColores,fuentePrincipal),.125rem .125rem map-get($paletaColores,fuenteSecundariaclara));
+                }
+            &:hover{
+                scale: (1.2);
+            }
+        }
+        width: 100%;
+    }
+}

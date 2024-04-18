@@ -1,0 +1,318 @@
+@media(max-width:768px){
+    /**generales**/
+    header{
+        div{
+            height: 4rem;
+            a{
+                color: map-get($paletaColores,fuentePrincipal);
+                padding-right: 5rem;
+            }
+            #menu-check:not(:checked) ~ .navBar{
+                display: none;
+            }
+            #menu-check:checked ~ .navBar{
+                display: block;
+            }
+            #menu-check:checked ~ label #menu-abrir{
+                display: none;
+            }
+            #menu-check:checked ~ label #menu-cerrar{
+                display: block;
+            }
+            #menu{
+                display: block;
+                @include font(amarath,1rem,800,uppercase,map-get($paletaColores,fuentePrincipal),.125rem .125rem .125rem .125rem map-get($paletaColores,fuenteSecundaria));
+                width: 2rem;
+                text-align: center;
+                border: .1875rem solid map-get($paletaColores,fuentePrincipal);
+                border-radius: .3125rem;
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                z-index: 9999;
+                #menu-cerrar{
+                    display: none;
+                    font-family: arial;
+                    font-weight: 550;
+                }
+            }
+            .navBar{
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width:100%;
+                opacity: 0.8;
+                color:map-get($paletaColores,fondoClaro);
+                background-color: map-get($paletaColores,fuentePrincipal);
+                font-size:$m;
+                ul{
+                    display: block;
+                    text-align: right;
+                    background-color:map-get($paletaColores,fondoMenu);
+                    li{
+                        a{
+                            color: map-get($paletaColores,fuentePrincipal);
+                            padding-right: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        section{
+            h2{
+                font-size: $m;
+            }
+            h3{
+                font-size: $m;
+            }
+            p{
+                font-size: $m;
+                text-align: center;
+            }
+        }
+    }
+    
+    footer{
+        height: auto;
+        gap: 0;
+        padding: .625rem;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+
+    /**Index**/
+    .mainIndex{
+        .backgroundIndex{
+            background-size: 100% 100%;
+            margin-bottom: 0rem;
+            background-repeat: no-repeat;
+            .tituloIndex{
+                padding: 7rem 2rem 0rem;
+                font-size: $s;
+                height: 75%;
+                width: 100%;
+            }
+        }
+        .viryaArt{
+            .mandala{
+                height: 50%;
+                width: 50%;
+            }
+            .virya{
+                font-size: 1rem;
+                width: 100%;
+                padding: 1rem 10%;
+            }
+            button{
+                a{
+                    font-size: $m;
+                }
+            }
+        }
+        .section-eventos{
+            .eventos-car{
+                size: 100% 100%;
+                font-size: $xl;
+                h3{
+                    font-size: $xs;
+                }
+                .img-car{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    /**Formaciones**/
+    .mainFormaciones{
+        .backgroundFormaciones{
+            background-size: 100% 100%;
+            margin-bottom: 0rem;
+            background-repeat: no-repeat;
+            .tituloFormaciones{
+                padding: 2rem 2rem 6rem;
+                font-size: $s;
+                height: 75%;
+                width: 100%;
+            }
+        }
+        .profesorado{
+            @include grid(1fr,repeat(4,1fr),center,center,"prof__desc""prof__ic1""prof__ic2""prof__ic3");
+            .prof__desc{
+                grid-area: prof__desc;
+                padding: 0rem 1rem;
+            }
+            .prof__ic1{
+                grid-area: prof__ic1;
+            }
+            .prof__ic2{
+                grid-area: prof__ic2;
+            }
+            .prof__ic3{
+                grid-area: prof__ic3;
+            }
+            h3{
+                font-size: $m;
+            }
+            div{
+                h4{
+                    text-align: center;
+                }
+            }
+
+        }
+        .autoconocimiento{
+            @include grid(1fr,50% 50%,center,center,"auto__desc""auto__img1");
+            margin-bottom: 5rem;
+            .auto__desc{
+                grid-area: auto__desc;
+                margin: 1rem 5rem;
+            }   
+            .auto__img1{
+                grid-area: auto__img1;
+            }
+            .auto__img2{
+                display: none;
+            }
+            .auto__img3{
+                display: none;
+            }
+            h3{
+                font-size: $m;
+            }
+        }
+        .taller{
+            @include grid(1fr,30% 70%,center,center,"taller__desc""taller__img1");
+            margin:1.5rem 1rem;
+            .taller__desc{
+                grid-area: taller__desc;
+            }   
+            .taller__img1{
+                grid-area: taller__img1;
+                height: 100%;
+                width: 100%;
+            }
+            .taller__img2{
+                display: none;
+            }
+            h3{
+                font-size: $m;
+            }
+        }
+    }
+
+    /**Horarios**/
+    .mainHorarios{
+        .backgroundHorarios{
+            background-size: 100% 100%;
+            margin-bottom: 0rem;
+            background-repeat: no-repeat;
+            .tituloHorarios{
+                padding: 3rem 0rem 4rem 0rem;
+                text-align: center;
+                font-size: $s;
+                height: 75%;
+                width: 100%;
+            }
+        }
+        .grid{
+            .gridHorarios{
+                @include grid(repeat(2,1fr),repeat(6,6rem) 8rem repeat(4,6rem) 8rem 6rem,center,center,"div1 div6"
+                "div1 div14"
+                "div2 div7"
+                "div2 div12"
+                "div2 div17"
+                "div3 div8"
+                "div3 div10"
+                "div3 div15"
+                "div4 div13"
+                "div4 div18"
+                "div5 div9"
+                "div5 div11"
+                "div5 div16"
+                "div19 div20");
+                .div21{
+                    display: none;
+                }
+                .div22{
+                    display: none;
+                }
+                .div23{
+                    display: none;
+                }
+                h3{
+                    font-size: $m;
+                    padding-top: 2rem;
+                }
+                h4{
+                    font-size: $s;
+                }
+                h5{ 
+                    font-size: $xs;
+                }
+                p{
+                    font-size: $xs;
+                }
+            }
+        }
+    }
+
+    /**Blog**/
+    .mainBlog{
+        .backgroundBlog{
+            background-size: 100% 100%;
+            margin-bottom: 0rem;
+            background-repeat: no-repeat;
+            .tituloBlog{
+                padding: 6rem 2rem 2rem;
+                font-size: $s;
+                height: 75%;
+                width: 100%;
+            }
+        }
+        .articulos{
+            p{
+                display: none;
+            }
+            .artImg{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+
+    /**Contacto**/
+    .mainContacto{
+        .backgroundContacto{
+            background-size: 100% 100%;
+            margin-bottom: 0rem;
+            background-repeat: no-repeat;
+            .tituloContacto{
+                padding: 5rem 2rem 2rem;
+                font-size: $s;
+                height: 75%;
+                width: 100%;
+            }
+        }
+        .contacto{
+            @include flex(column,center,center,.125rem);
+            iframe{
+                width: 80%;
+                height: 100%;
+            }
+            div{
+                ul{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

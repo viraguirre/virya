@@ -1,48 +1,48 @@
 /**reset**/
-*{
+/**{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}**/
 
 /**generales**/
-header,button,h1,h2,h3,h4,h5,h6,p{
+/**header,button,h1,h2,h3,h4,h5,h6,p{
     font-family: "Amaranth", sans-serif;
     font-weight: 700;
     font-style: normal;
-}
-h2,h4,h5,header{
+}**/
+/**h2,h4,h5,header{
     text-transform: uppercase;
-}
-header,footer{
-    background-color: #69A898;
+}**/
+/**header,footer{
+    background-color:#69A898 ;
     display: flex;
     width:100%;
     flex-direction: row;
     color: white;
     align-items: center;
     font-size: 110%;
-}
-header{
+}**/
+/**header{
     height: 7rem;
     position: sticky;
     top: 0;
-}
-.contenedor{
+}**/
+/*.contenedor{
     place-content: flex-start;
     display: flex;
     flex-direction: row;
     width: 100%;
     margin-left: 1rem;
-}
-.contenedor nav{
+}*/
+/*.contenedor nav{
     width: 100%;
     display: flex;
     justify-content: space-around;
-}
-#menu, #menu-check{
+}*/
+/*#menu, #menu-check{
     display: none;
-}
+}*/
 ul{
     list-style: none;
     gap: 4rem;
@@ -51,11 +51,12 @@ ul{
     justify-content: space-around;
     width: 100%;
 }
-footer{
+/**footer{
     height: 5rem;
     justify-content: space-evenly;
-}
-button{
+}**/
+
+/**button{
     background-color: #69A898;
     font-size: 2rem;
     color: white;
@@ -64,7 +65,8 @@ button{
     border-width: 0px;
     border-radius: 1.25rem;
     margin: 1rem;
-}
+}**/
+
 h1,h2,h4,a{
     color: white;
     text-shadow: 0px 2px 2px #333333;

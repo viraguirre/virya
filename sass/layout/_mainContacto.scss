@@ -1,0 +1,41 @@
+.mainContacto{
+    .backgroundContacto{
+    text-align: center;
+    background-image: url(../assets/fondo-contacto.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+        .tituloContacto{
+            height: 25rem;
+            width: 100%;
+            margin: 0;
+            padding: 20rem 0rem 0rem 0rem;
+            @include font(amaranth,$l,100,none,map-get($paletaColores,fuentePrincipal),.125rem);
+            &:first-letter{
+                text-transform: capitalize;
+            }
+        }
+    }
+    .contacto{
+        @include flex(row,space-around,center,1rem);
+    }
+        div{
+            p{
+                text-align: center;
+            }
+            ul{
+                @include flex(row,center,center,0.25rem);
+                li{
+                    a{
+                        img{
+                            width: 50%;
+                            height: 50%;
+                            margin: 0;
+                        }
+                    }
+                } 
+            }
+        }
+        iframe{
+            margin: 3rem 0;
+        }
+}
