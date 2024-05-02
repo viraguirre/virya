@@ -101,12 +101,11 @@ header #menu {
     .mainIndex .articuloLogo .viryaArt div p {
       align-content: center;
       padding: 1rem 3rem;
-      background-color: rgba(255, 255, 255, 0.4);
       font-family: "Amaranth", sans-serif;
       font-size: 2rem;
       font-weight: 700;
       text-transform: none;
-      color: #117057;
+      color: #333333;
       text-shadow: 0.125rem 0.125rem 0.125rem 0.125rem #333333; }
     .mainIndex .articuloLogo .viryaArt div button {
       background-color: #1d9275; }
@@ -186,7 +185,6 @@ header #menu {
   font-size: 2rem;
   font-weight: 100;
   text-transform: none;
-  color: #117057;
   text-shadow: 0.125rem #333333;
   align-items: center; }
   .mainFormaciones h3:first-letter {
@@ -197,7 +195,6 @@ header #menu {
   font-size: 1.5rem;
   font-weight: 100;
   text-transform: none;
-  color: #117057;
   text-shadow: 0.125rem 0.125rem 0.125rem 0.125rem #333333; }
   .mainFormaciones h4:first-letter {
     text-transform: capitalize; }
@@ -504,7 +501,7 @@ header #menu {
   margin: 0; }
 
 .mainContacto .contacto {
-  background: #117057;
+  background: #1d9275;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

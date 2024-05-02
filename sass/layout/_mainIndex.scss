@@ -25,7 +25,7 @@
                 p{
                     align-content: center;
                     padding: 1rem 3rem;
-                    @include font($fuentePrincipal,$xl,700,none,map-get($paletaColores,fuenteOscura),.125rem .125rem .125rem .125rem map-get($paletaColores,fuenteSecundaria));  
+                    @include font($fuentePrincipal,$xl,700,none,map-get($paletaColores,fuenteSecundaria),.125rem .125rem .125rem .125rem map-get($paletaColores,fuenteSecundaria));  
                 }
                 button{
                     background-color: map-get($paletaColores,fondoOscuro);;

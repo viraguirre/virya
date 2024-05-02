@@ -21,7 +21,7 @@
         }
     }
     .contacto{
-        background: map-get($paletaColores, fuenteOscura );
+        background: map-get($paletaColores, fondoOscuro );
         @include flex(row,space-around,center,1rem);
     }
         div{
