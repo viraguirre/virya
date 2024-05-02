@@ -1,7 +1,7 @@
 .mainContacto{
     .backgroundContacto{
     text-align: center;
-    background-image: url(../assets/fondo-contacto.png);
+    background-image: url(../assets/fondos-h1/fondo-contacto.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
         .tituloContacto{
@@ -16,6 +16,7 @@
         }
     }
     .contacto{
+        background-image: linear-gradient(to left top, #8cecd4, #87e7cf, #82e2ca, #7ddec6, #78d9c1, #6fd1b9, #67cab1, #5ec2a9, #4fb69c, #40aa8f, #309e82, #1d9275);
         @include flex(row,space-around,center,1rem);
     }
         div{

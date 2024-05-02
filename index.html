@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>virya-yoga-&-wellness</title>
+    <meta name="description" content="Experimenta los beneficios del Yoga en nuestro espacio dedicado al autocuidado. Fortalece cuerpo y mente guiado por nuestros instructores en las diferentes clases ideadas para toda la comunidad.">
+    <meta name="keywords" content="yoga,chakra,energía,wellness,mindfullness">
+    <meta name="author" content="Mandala | Coding Studio">
+    <meta name="copyright" content="Vîrya Yoga & Wellness">
+    <meta property="og:title" content="Vîrya Yoga & Wellness">
+    <meta property="og:site_name" content="Vîrya Yoga & Wellness">
+    <meta property="og:url" content="viryayogahouse.com">
+    <meta property="og:description" content="Descubre el poder transformador del Yoga y sus beneficios para lograr una vida plena. Mindfullness, Ashtanga, Vinyasa, Hatha, Meditación y mucho más.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://unsplash.com/es/fotos/fotografia-de-silueta-de-mujer-haciendo-yoga-F2qh3yjz6Jk">
+    <title>Vîrya | Yoga & Wellness</title>
+    <link rel="shortcut icon" href="./assets/icono/shortcut.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
         <div>
-            <a href="#"><img src="./assets/logo-barra.png"></a>
+            <a href="#"><img src="./assets/img-logos/logo-barra.png" alt="logo virya yoga & wellness verde"></a>
             <input type="checkbox" id="menu-check">
             <label id="menu" for="menu-check">
                 <span id="menu-abrir">&#9776;</span>
@@ -33,10 +45,14 @@
         </section>
         <section class="articuloLogo">
             <article class="viryaArt">
-                <img class="mandala" src="./assets/logo-oscuro.png" alt="mandala beige logo virya yoga studio">
+              <div>  
+                <img class="mandala" src="./assets/img-logos/logo-oscuro.png" alt="mandala beige logo virya yoga studio">
+              </div>
+              <div>
                 <p class="virya">La fuerza se construye y se entrena, igual que el equilibrio, la elasticidad o la coordinación. En el momento que tomas la decisión de empezar a cuidarte                y practicar yoga, has emprendido sin saberlo el camino de VÎrya:
                 la senda del guerrero de la Luz.</p>
                 <button><a href="./pages/contacto.html">Quiero inscribirme</a></button>
+              </div>
             </article>
         </section>
         <section class="section-eventos">
@@ -44,9 +60,9 @@
             <section class="eventos-car">
                 <div class="text-car-desc">
                     <h3 class="text-car">Enterate de todos los eventos <br> que planeamos desde Virya Yoga Studio para <br>nuestra comunidad.</h3>
-                    <img class="img-car" src="./assets/medita.png" alt="logo verde hombre meditando">
                 </div>
-                <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carrousel">
+                  <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -54,21 +70,21 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="./assets/index-clase.png" class="d-block w-100" alt="mujer vestida de verde realizando yoga dentro de un studio">
+                        <img src="./assets/img-index/index-clase.png" class="d-block w-100" alt="mujer vestida de verde realizando yoga dentro de un studio">
                         <div class="carousel-caption d-none d-md-block">
                           <h4 class="h4">clase abierta de natha yoga</h4>
                           <p>04/03/2024</p>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="./assets/index-retiro.png" class="d-block w-100" alt="cinco personas realizando yoga al aire libre en un bosque">
+                        <img src="./assets/img-index/index-retiro.png" class="d-block w-100" alt="cinco personas realizando yoga al aire libre en un bosque">
                         <div class="carousel-caption d-none d-md-block">
                           <h4>1° Retiro Profesorado</h4>
                           <p>10/04/2024</p>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="./assets/index-masaje.png" class="d-block w-100" alt="foto en blanco y negro masaje thai siendo realizado en el pie del consultante">
+                        <img src="./assets/img-index/index-masaje.png" class="d-block w-100" alt="foto en blanco y negro masaje thai siendo realizado en el pie del consultante">
                         <div class="carousel-caption d-none d-md-block">
                           <h4>taller masaje thai</h4>
                           <p>25/03/2024</p>
@@ -84,23 +100,28 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
+                </div>
             </section>
         </section>
     </main>
     <footer>
         <div>
             <ul>
-                <li><a href="https://www.whatsapp.com/" target="_blank"><img src="./assets/whatsapp.png" alt="logo whatsapp blanco"></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="./assets/facebook.png" alt="logo facebook blanco"></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><img src="./assets/instagram.png" alt="logo instagram blanco"></a></li>
-                <li><a href="https://web.telegram.org/k/" target="_blank"><img src="./assets/telegram.png" alt="logo telegram blanco"></a></li>
+                <li><a href="https://www.whatsapp.com/" target="_blank"><img src="./assets/img-logos/whatsapp.png" alt="logo whatsapp blanco"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="./assets/img-logos/facebook.png" alt="logo facebook blanco"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="./assets/img-logos/instagram.png" alt="logo instagram blanco"></a></li>
+                <li><a href="https://web.telegram.org/k/" target="_blank"><img src="./assets/img-logos/telegram.png" alt="logo telegram blanco"></a></li>
             </ul>
         </div>
         <div>
-            <img src="./assets/logo-pie.png">
+            <img src="./assets/img-logos/logo-pie.png" alt="logo virya yoga & wellness verde">
+        </div>
+        <div>
+            <p>powered by</p>
+            <img class="coding" src="./assets/img-logos/mandala-logo.png" alt="logo mandala coding studio color naranja">
         </div>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html> 

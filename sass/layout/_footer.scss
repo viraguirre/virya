@@ -7,6 +7,13 @@ footer{
         ul{
             @include flex(row,space-evenly,center,1.25rem);
         }
+        p{
+            @include font($fuentePrincipal,0.5rem,100,none,map-get($paletaColores,fuentePrincipal),.125rem .125rem map-get($paletaColores,fuenteSecundariaclara));
+            text-align: right;
+        }
+        .coding{
+            width: 5rem;
+            margin-right: .1875rem;
+        }
     }
-
 }

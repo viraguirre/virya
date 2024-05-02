@@ -4,7 +4,7 @@ header{
         height: 5rem;
         position: sticky;
         top: 0;
-        @include flex (row,space-around,center,1rem)
+        @include flex (row,center,center,10rem)
         }
         #menu-check{
             display: none;

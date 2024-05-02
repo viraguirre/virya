@@ -24,9 +24,10 @@ main p {
     text-transform: capitalize; }
 
 main button {
-  background-color: #69A898;
+  background-color: #40aa8f;
   padding: .9375rem;
-  border-width: 0px;
+  border-width: .125rem;
+  border-color: white;
   border-radius: 1.25rem;
   margin: 1rem; }
   main button a {
@@ -47,20 +48,20 @@ main h2 {
   text-transform: uppercase;
   color: white;
   text-shadow: 0.125rem 0.125rem rgba(51, 51, 51, 0.36);
-  background-color: #69A898;
+  background-color: #40aa8f;
   text-align: center; }
 
 /**layout**/
 header div {
-  background-color: #69A898;
+  background-color: #40aa8f;
   height: 5rem;
   position: sticky;
   top: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 1rem; }
+  gap: 10rem; }
 
 header #menu-check {
   display: none; }
@@ -70,14 +71,13 @@ header #menu {
 
 .mainIndex .backgroundIndex {
   text-align: left;
-  background-image: url(../assets/fondo-index.png);
+  background-image: url(../assets/fondos-h1/fondo-index.png);
   background-size: 100% 100%;
   background-repeat: no-repeat; }
   .mainIndex .backgroundIndex .tituloIndex {
     height: 25rem;
     width: 100%;
     padding: 14rem 0rem 0rem 4rem;
-    margin: 0 0 1rem 0;
     font-family: amaranth;
     font-size: 1.7rem;
     font-weight: 100;
@@ -87,29 +87,33 @@ header #menu {
     .mainIndex .backgroundIndex .tituloIndex:first-letter {
       text-transform: capitalize; }
 
-.mainIndex section article {
+.mainIndex .viryaArt {
+  background-image: linear-gradient(to left top, #8cecd4, #87e7cf, #82e2ca, #7ddec6, #78d9c1, #6fd1b9, #67cab1, #5ec2a9, #4fb69c, #40aa8f, #309e82, #1d9275);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem; }
-  .mainIndex section article p {
-    padding: 1rem 10rem; }
-  .mainIndex section article button:hover {
+  gap: 0.625rem;
+  flex-wrap: nowrap; }
+  .mainIndex .viryaArt .mandala {
+    margin-left: 3rem;
+    width: 15rem;
+    animation-name: mandala-animation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    transition: all 4000ms linear; }
+  .mainIndex .viryaArt p {
+    padding: 1rem 10rem;
+    color: #e8ecf4; }
+  .mainIndex .viryaArt button {
+    margin-left: 10rem; }
+  .mainIndex .viryaArt button:hover {
     transform: scale(1.2); }
 
-.mainIndex .articuloLogo .viryaArt .mandala {
-  margin-top: 2rem;
-  width: 20rem;
-  animation-name: mandala-animation;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 4s;
-  transition: all 4000ms linear; }
-
-.mainIndex .section-eventos section {
-  width: 100%;
-  height: 50%;
+.mainIndex .section-eventos .eventos-car {
+  width: vw;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: none;
@@ -117,16 +121,16 @@ header #menu {
   gap: 0;
   text-align: center;
   margin-bottom: 1rem; }
-  .mainIndex .section-eventos section h3 {
+  .mainIndex .section-eventos .eventos-car .text-car-desc h3 {
     font-family: allerta;
     font-size: 1.7rem;
     font-weight: 100;
     text-transform: none;
     color: #333333;
     text-shadow: 0.125rem; }
-    .mainIndex .section-eventos section h3:first-letter {
+    .mainIndex .section-eventos .eventos-car .text-car-desc h3:first-letter {
       text-transform: capitalize; }
-  .mainIndex .section-eventos section h4 {
+  .mainIndex .section-eventos .eventos-car .carousel h4 {
     font-family: amaranth;
     font-size: 1.5rem;
     font-weight: 100;
@@ -134,7 +138,7 @@ header #menu {
     color: white;
     text-shadow: 0.125rem 0.125rem 0.125rem 0.125rem #333333;
     background-color: rgba(255, 255, 255, 0.308); }
-  .mainIndex .section-eventos section p {
+  .mainIndex .section-eventos .eventos-car .carousel p {
     font-family: amaranth;
     font-size: 1.7rem;
     font-weight: 100;
@@ -142,13 +146,14 @@ header #menu {
     color: white;
     text-shadow: 0.125rem;
     background-color: rgba(255, 255, 255, 0.308); }
-  .mainIndex .section-eventos section div img {
-    height: 100%;
-    width: 100%; }
+  .mainIndex .section-eventos .eventos-car .carousel img {
+    height: 50%;
+    width: 50%; }
 
 @keyframes mandala-animation {
   0% {
-    filter: sepia(5); }
+    filter: sepia(5);
+    transform: rotate(90deg); }
   50% {
     filter: saturate(1);
     scale: 1.2; }
@@ -157,7 +162,7 @@ header #menu {
 
 .mainFormaciones .backgroundFormaciones {
   text-align: left;
-  background-image: url(../assets/fondo-formaciones.png);
+  background-image: url(../assets/fondos-h1/fondo-formaciones.png);
   background-size: 100% 100%;
   background-repeat: no-repeat; }
   .mainFormaciones .backgroundFormaciones .tituloFormaciones {
@@ -269,7 +274,7 @@ header #menu {
 
 .mainHorarios .backgroundHorarios {
   text-align: left;
-  background-image: url(../assets/fondo-horarios.png);
+  background-image: url(../assets/fondos-h1/fondo-horarios.png);
   background-size: 100% 100%;
   background-repeat: no-repeat; }
 
@@ -400,7 +405,7 @@ header #menu {
 
 .mainBlog .backgroundBlog {
   text-align: right;
-  background-image: url(../assets/fondo-blog.png);
+  background-image: url(../assets/fondos-h1/fondo-blog.png);
   background-size: 100% 100%;
   background-repeat: no-repeat; }
   .mainBlog .backgroundBlog .tituloBlog {
@@ -466,7 +471,7 @@ header #menu {
 
 .mainContacto .backgroundContacto {
   text-align: center;
-  background-image: url(../assets/fondo-contacto.png);
+  background-image: url(../assets/fondos-h1/fondo-contacto.png);
   background-size: 100% 100%;
   background-repeat: no-repeat; }
   .mainContacto .backgroundContacto .tituloContacto {
@@ -484,6 +489,7 @@ header #menu {
       text-transform: capitalize; }
 
 .mainContacto .contacto {
+  background-image: linear-gradient(to left top, #8cecd4, #87e7cf, #82e2ca, #7ddec6, #78d9c1, #6fd1b9, #67cab1, #5ec2a9, #4fb69c, #40aa8f, #309e82, #1d9275);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -509,7 +515,7 @@ header #menu {
 
 footer {
   height: 5rem;
-  background-color: #69A898;
+  background-color: #40aa8f;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -522,6 +528,17 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     gap: 1.25rem; }
+  footer div p {
+    font-family: "Amaranth", sans-serif;
+    font-size: 0.5rem;
+    font-weight: 100;
+    text-transform: none;
+    color: white;
+    text-shadow: 0.125rem 0.125rem rgba(51, 51, 51, 0.36);
+    text-align: right; }
+  footer div .coding {
+    width: 5rem;
+    margin-right: .1875rem; }
 
 @media (max-width: 768px) {
   /**generales**/
@@ -611,11 +628,9 @@ footer {
     font-size: 1.5rem; }
   .mainIndex .section-eventos .eventos-car {
     size: 100% 100%;
-    font-size: 2rem; }
-    .mainIndex .section-eventos .eventos-car h3 {
+    font-size: 1.5rem; }
+    .mainIndex .section-eventos .eventos-car .text-car-desc .text-car {
       font-size: 1rem; }
-    .mainIndex .section-eventos .eventos-car .img-car {
-      display: none; }
   /**Formaciones**/
   .mainFormaciones .backgroundFormaciones {
     background-size: 100% 100%;
@@ -869,7 +884,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   list-style: none;
   width: 100%; }
   .navBar ul li a {
