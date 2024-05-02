@@ -4,6 +4,7 @@
         background-image: url(../assets/fondos-h1/fondo-index.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        margin: 0;
         .tituloIndex{
             height: 25rem;
             width: 100%;
@@ -14,45 +15,46 @@
             }
         }
     }
-    .viryaArt{
-        background-image: linear-gradient(to left top, #8cecd4, #87e7cf, #82e2ca, #7ddec6, #78d9c1, #6fd1b9, #67cab1, #5ec2a9, #4fb69c, #40aa8f, #309e82, #1d9275);
-            @include flex(row,center,center,.625rem);
-            flex-wrap: nowrap;
-            .mandala{
-                margin-left: 3rem;
-                width: 15rem;
-                animation-name: mandala-animation;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
-                animation-duration: 4s;
-                transition: all 4000ms linear;
+    .articuloLogo{
+        .viryaArt{
+            background-image: url(../assets/img-index/mandala.png) ;
+            background-repeat: repeat;
+            div{
+                @include flex(column,center,center,.625rem);
+                text-justify: center;
+                p{
+                    align-content: center;
+                    padding: 1rem 3rem;
+                    background-color: map-get($paletaColores,fondoTraslucido);
+                    @include font($fuentePrincipal,$xl,700,none,map-get($paletaColores,fuenteOscura),.125rem .125rem .125rem .125rem map-get($paletaColores,fuenteSecundaria));  
+                }
+                button{
+                    background-color: map-get($paletaColores,fondoOscuro);;
+                }
+                button:hover{
+                    transform: scale(1.2);
+                }
             }
-            p{
-                padding: 1rem 10rem;
-                color: #e8ecf4;
-            }
-            button{
-                margin-left: 10rem;
-            }
-            button:hover{
-                transform: scale(1.2);
-            }
+            
         }
-
-
+    } 
     .section-eventos{
+        h2{
+            margin: 0;
+        }
         .eventos-car{
-            width: vw;
+            background: map-get($paletaColores, fondoOscuro);
             height: 100%;
-            @include flex(row,none,center,0);
+            @include flex(row,center,center,0);
             text-align: center;
-            margin-bottom: 1rem;
+            padding: 1rem 4rem;
             .text-car-desc{
                 h3{
-                    @include font(allerta,$l,100,none,map-get($paletaColores,fuenteSecundaria),.125rem);  
+                    @include font(allerta,$l,100,none,map-get($paletaColores,fuentePrincipal),.25rem .25rem .25rem .25rem map-get($paletaColores,fuenteSecundaria));  
                     &:first-letter{
                         text-transform: capitalize;
                     }
+                    margin: 0rem 1rem;
                 }
             }
             .carousel{
@@ -64,25 +66,15 @@
                     @include font(amaranth,$l,100,none,map-get($paletaColores,fuentePrincipal),.125rem);
                     background-color: map-get($paletaColores,fondoTraslucido)
                 }
-                img{
-                    height: 50%;
-                    width: 50%;
+                .carousel-item {
+                    width: 25rem;
+                    height: 100%;
+                    overflow: hidden;
+                }
+                .carousel-inner{
+                    max-width: 25rem;
                 }
             }
         }
-    }
-}
-
-@keyframes mandala-animation {
-    0%{
-        filter: sepia(5);
-        transform: rotate(90deg);
-    }
-    50%{
-        filter: saturate(1);
-        scale: (1.2);
-    }
-    100%{
-        filter: sepia(3);
     }
 }

@@ -14,10 +14,9 @@ main{
     margin: 1rem;
         a{
             text-decoration: none;
-            @include font(amaranth,$xl,100,capitalize,map-get($paletaColores,fuentePrincipal),.125rem .125rem map-get($paletaColores,fuenteSecundariaclara));
+            @include font(amaranth,$l,100,capitalize,map-get($paletaColores,fuentePrincipal),.125rem .125rem map-get($paletaColores,fuenteSecundariaclara));
         }
     }
-
     h2{
         width: 100%;
         padding: 1rem 0rem;
@@ -25,6 +24,4 @@ main{
         background-color: map-get($paletaColores,fondoBarras);
         text-align: center;
     }
-
-
 }

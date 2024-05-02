@@ -44,10 +44,13 @@
         .artUno{
             @include flex(row,center,center, 2.25rem);
             text-align: left;
+            background-color: map-get($paletaColores,fondoClaro)
         }
         .artDos{
             @include flex(row-reverse,center,center,2.25rem);
             text-align: right;
+            background-image: url(../assets/img-index/mandala.png) ;
+            background-repeat: repeat;
         }
         .artTres{
             @extend .artUno;

@@ -15,24 +15,30 @@
             }
         }
     }
+    h2{
+        margin: 0;
+    }
     h3{
-        @include font(amaranth,$xl,100,none,map-get($paletaColores,fuenteSecundaria),none);
+        @include font(amaranth,$xl,100,none,map-get($paletaColores,fuenteOscura),.125rem map-get($paletaColores, fuenteSecundaria));
         align-items: center;
         &:first-letter{
             text-transform: capitalize;
         }
     }
     h4{
-        @include font(amaranth,$m,100,none,map-get($paletaColores,fuenteSecundaria),.125rem .125rem .125rem .125rem map-get($paletaColores,fuenteSecundaria));  
+        @include font(amaranth,$m,100,none,map-get($paletaColores,fuenteOscura),.125rem .125rem .125rem .125rem map-get($paletaColores,fuenteSecundaria));  
         &:first-letter{
             text-transform: capitalize;
         }
     }
     .profesorado{
         @include grid(repeat(3,1fr),repeat(2,1fr),center,center,"prof__desc prof__desc prof__desc""prof__ic1 prof__ic2 prof__ic3");
+        background-image: url(../assets/img-index/mandala.png) ;
+        background-repeat: repeat;
         .prof__desc{
             grid-area: prof__desc;
             text-align: center;
+            padding: 2rem 10rem;
             .icono-prof{
                 size: 100% 100%;
             }
@@ -61,11 +67,13 @@
         }
     }
     .autoconocimiento{
-        @include grid(repeat(3,1fr),repeat(2,6rem),center,center,"auto__desc auto__desc auto__desc""auto__img1 auto__img2 auto__img3");
-        margin-bottom: 10rem;
+        @include grid(repeat(3,1fr),20rem 6rem,center,center,"auto__img1 auto__img2 auto__img3""auto__desc auto__desc auto__desc");
+        background: map-get($paletaColores, fondoOscuro );
+        padding-top: 2rem;
         .auto__desc{
             grid-area: auto__desc;
             text-align: center;
+            color: map-get($paletaColores, fuentePrincipal );
         }
         .auto__img1{
             grid-area: auto__img1;
@@ -83,6 +91,8 @@
     .taller{
         @include flex(row,center,center,.3125rem);
         margin: 0rem 1rem 0.625rem 1rem;
+        background-image: url(../assets/img-index/mandala.png) ;
+        background-repeat: repeat;
         h3{
             text-align: center;
         }

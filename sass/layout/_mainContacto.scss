@@ -15,21 +15,29 @@
             }
         }
     }
+    section{
+        h2{
+            margin: 0;
+        }
+    }
     .contacto{
-        background-image: linear-gradient(to left top, #8cecd4, #87e7cf, #82e2ca, #7ddec6, #78d9c1, #6fd1b9, #67cab1, #5ec2a9, #4fb69c, #40aa8f, #309e82, #1d9275);
+        background: map-get($paletaColores, fuenteOscura );
         @include flex(row,space-around,center,1rem);
     }
         div{
+            justify-items: left;
             p{
-                text-align: center;
+                text-align: left;
+                margin-left: 2rem;
+                color: map-get($paletaColores, fuentePrincipal )
             }
             ul{
-                @include flex(row,center,center,0.25rem);
+                @include flex(row,left,center,0.25rem);
                 li{
                     a{
                         img{
-                            width: 50%;
-                            height: 50%;
+                            width: 100%;
+                            height: 100%;
                             margin: 0;
                         }
                     }
@@ -39,4 +47,20 @@
         iframe{
             margin: 3rem 0;
         }
+        .mandala{
+            margin-left: 3rem;
+            height: 60%;
+            width: 60%;
+            animation-name: mandala-animation;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 4s;
+            transition: all 4000ms linear;
+        }
+}
+
+@keyframes mandala-animation {
+    0%{
+        transform: rotate(90deg);
+    }
 }
