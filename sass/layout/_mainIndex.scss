@@ -13,19 +13,18 @@
             &:first-letter{
                 text-transform: capitalize;
             }
+            margin: 0;
         }
     }
     .articuloLogo{
         .viryaArt{
-            background-image: url(../assets/img-index/mandala.png) ;
-            background-repeat: repeat;
+            background-color: map-get($paletaColores,fondoClaro);
+            text-justify: center;
             div{
                 @include flex(column,center,center,.625rem);
-                text-justify: center;
                 p{
-                    align-content: center;
                     padding: 1rem 3rem;
-                    @include font($fuentePrincipal,$xl,700,none,map-get($paletaColores,fuenteSecundaria),.125rem .125rem .125rem .125rem map-get($paletaColores,fuenteSecundaria));  
+                    @include font($fuentePrincipal,$xl,400,none,map-get($paletaColores,fuenteSecundaria),.125rem .125rem .125rem .125rem map-get($paletaColores,fuenteSecundaria));  
                 }
                 button{
                     background-color: map-get($paletaColores,fondoOscuro);;

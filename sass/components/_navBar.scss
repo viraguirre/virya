@@ -1,6 +1,6 @@
 .navBar{
     ul{
-        @include flex (row,center,center,2rem);
+        @include flex (row,center,center,1rem);
         list-style: none;
         li{
             a{

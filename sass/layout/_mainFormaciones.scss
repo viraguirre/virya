@@ -33,8 +33,7 @@
     }
     .profesorado{
         @include grid(repeat(3,1fr),repeat(2,1fr),center,center,"prof__desc prof__desc prof__desc""prof__ic1 prof__ic2 prof__ic3");
-        background-image: url(../assets/img-index/mandala.png) ;
-        background-repeat: repeat;
+        background-color: map-get($paletaColores,fondoClaro);
         .prof__desc{
             grid-area: prof__desc;
             text-align: center;
@@ -78,23 +77,28 @@
         .auto__img1{
             grid-area: auto__img1;
             justify-self: center;
+            size: 100% 100%;
         }
         .auto__img2{
             grid-area: auto__img2;
             justify-self: center;
+            size: 100% 100%;
         }
         .auto__img3{
             grid-area: auto__img3;
             justify-self: center;
+            size: 100% 100%;
         }
     }
     .taller{
         @include flex(row,center,center,.3125rem);
         margin: 0rem 1rem 0.625rem 1rem;
-        background-image: url(../assets/img-index/mandala.png) ;
-        background-repeat: repeat;
+        background-color: map-get($paletaColores,fondoClaro);
         h3{
             text-align: center;
+        }
+        img{
+            size: 100% 100%;
         }
     }
 }

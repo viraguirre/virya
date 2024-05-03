@@ -100,31 +100,49 @@
                 width: 100%;
             }
         }
-        .viryaArt{
-            .mandala{
-                height: 50%;
-                width: 50%;
-            }
-            .virya{
-                font-size: 1rem;
-                width: 100%;
-                padding: 1rem 10%;
-            }
-            button{
-                a{
-                    font-size: $m;
+        .articuloLogo{
+            .viryaArt{
+                background-color: map-get($paletaColores, fondoClaro );
+                background-image: none;
+                .virya{
+                    font-size: 1rem;
+                    width: 100%;
+                    padding: 1rem 10%;
+                }
+                button{
+                    a{
+                        font-size: $m;
+                    }
                 }
             }
         }
+        
         .section-eventos{
             .eventos-car{
-                size: 100% 100%;
+                size: 50% 50%;
                 font-size: $m;
                 .text-car-desc{
                     .text-car{
                         font-size: $xs;
                     }
                 }
+                .carousel{
+                    h4{
+                        @include font(amaranth,$s,100,uppercase,map-get($paletaColores,fuentePrincipal),.125rem .125rem .125rem .125rem map-get($paletaColores,fuenteSecundaria));  
+                        background-color: map-get($paletaColores,fondoTraslucido)
+                    }
+                    p{
+                        @include font(amaranth,$m,100,none,map-get($paletaColores,fuentePrincipal),.125rem);
+                        background-color: map-get($paletaColores,fondoTraslucido)
+                    }
+                    .carousel-item {
+                        width: 15rem;
+                        height: 100%;
+                        overflow: hidden;
+                    }
+                    .carousel-inner{
+                        max-width: 15rem;
+                    }
             }
         }
     }
@@ -146,16 +164,25 @@
             @include grid(1fr,repeat(4,1fr),center,center,"prof__desc""prof__ic1""prof__ic2""prof__ic3");
             .prof__desc{
                 grid-area: prof__desc;
-                padding: 0rem 1rem;
+                padding: 2rem 0rem;
             }
             .prof__ic1{
                 grid-area: prof__ic1;
+                .icono-prof{
+                    size: 50% 50%;
+                }
             }
             .prof__ic2{
                 grid-area: prof__ic2;
+                .icono-prof{
+                    size: 50% 50%;
+                }
             }
             .prof__ic3{
                 grid-area: prof__ic3;
+                .icono-prof{
+                    size: 50% 50%;
+                }
             }
             h3{
                 font-size: $m;
@@ -172,10 +199,11 @@
             margin-bottom: 5rem;
             .auto__desc{
                 grid-area: auto__desc;
-                margin: 1rem 5rem;
+                margin: 1rem 2rem;
             }   
             .auto__img1{
                 grid-area: auto__img1;
+                size: 50% 50%;
             }
             .auto__img2{
                 display: none;
@@ -190,6 +218,8 @@
         .taller{
             @include grid(1fr,30% 70%,center,center,"taller__desc""taller__img1");
             margin:1.5rem 1rem;
+            background-color: map-get($paletaColores, fondoClaro );
+            background-image: none;
             .taller__desc{
                 grid-area: taller__desc;
             }   
@@ -314,4 +344,5 @@
             }
         }
     }
+}
 }

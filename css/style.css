@@ -61,7 +61,7 @@ header div {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10rem; }
+  gap: 5rem; }
 
 header #menu-check {
   display: none; }
@@ -84,26 +84,25 @@ header #menu {
     font-weight: 100;
     text-transform: none;
     color: white;
-    text-shadow: 0.125rem 0.125rem rgba(51, 51, 51, 0.36); }
+    text-shadow: 0.125rem 0.125rem rgba(51, 51, 51, 0.36);
+    margin: 0; }
     .mainIndex .backgroundIndex .tituloIndex:first-letter {
       text-transform: capitalize; }
 
 .mainIndex .articuloLogo .viryaArt {
-  background-image: url(../assets/img-index/mandala.png);
-  background-repeat: repeat; }
+  background-color: #66b19f53;
+  text-justify: center; }
   .mainIndex .articuloLogo .viryaArt div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
-    text-justify: center; }
+    gap: 0.625rem; }
     .mainIndex .articuloLogo .viryaArt div p {
-      align-content: center;
       padding: 1rem 3rem;
       font-family: "Amaranth", sans-serif;
       font-size: 2rem;
-      font-weight: 700;
+      font-weight: 400;
       text-transform: none;
       color: #333333;
       text-shadow: 0.125rem 0.125rem 0.125rem 0.125rem #333333; }
@@ -206,8 +205,7 @@ header #menu {
   justify-content: center;
   align-content: center;
   grid-template-areas: "prof__desc prof__desc prof__desc" "prof__ic1 prof__ic2 prof__ic3";
-  background-image: url(../assets/img-index/mandala.png);
-  background-repeat: repeat; }
+  background-color: #66b19f53; }
   .mainFormaciones .profesorado .prof__desc {
     grid-area: prof__desc;
     text-align: center;
@@ -258,13 +256,16 @@ header #menu {
     color: white; }
   .mainFormaciones .autoconocimiento .auto__img1 {
     grid-area: auto__img1;
-    justify-self: center; }
+    justify-self: center;
+    size: 100% 100%; }
   .mainFormaciones .autoconocimiento .auto__img2 {
     grid-area: auto__img2;
-    justify-self: center; }
+    justify-self: center;
+    size: 100% 100%; }
   .mainFormaciones .autoconocimiento .auto__img3 {
     grid-area: auto__img3;
-    justify-self: center; }
+    justify-self: center;
+    size: 100% 100%; }
 
 .mainFormaciones .taller {
   display: flex;
@@ -273,10 +274,11 @@ header #menu {
   align-items: center;
   gap: 0.3125rem;
   margin: 0rem 1rem 0.625rem 1rem;
-  background-image: url(../assets/img-index/mandala.png);
-  background-repeat: repeat; }
+  background-color: #66b19f53; }
   .mainFormaciones .taller h3 {
     text-align: center; }
+  .mainFormaciones .taller img {
+    size: 100% 100%; }
 
 .mainHorarios .backgroundHorarios {
   text-align: left;
@@ -637,165 +639,197 @@ footer {
       flex-wrap: wrap;
       gap: 1rem; }
   /**Index**/
-  .mainIndex .backgroundIndex {
-    background-size: 100% 100%;
-    margin-bottom: 0rem;
-    background-repeat: no-repeat; }
-    .mainIndex .backgroundIndex .tituloIndex {
-      padding: 7rem 2rem 0rem;
-      font-size: 1.3rem;
-      height: 75%;
-      width: 100%; }
-  .mainIndex .viryaArt .mandala {
-    height: 50%;
-    width: 50%; }
-  .mainIndex .viryaArt .virya {
-    font-size: 1rem;
-    width: 100%;
-    padding: 1rem 10%; }
-  .mainIndex .viryaArt button a {
-    font-size: 1.5rem; }
-  .mainIndex .section-eventos .eventos-car {
-    size: 100% 100%;
-    font-size: 1.5rem; }
-    .mainIndex .section-eventos .eventos-car .text-car-desc .text-car {
-      font-size: 1rem; }
-  /**Formaciones**/
-  .mainFormaciones .backgroundFormaciones {
-    background-size: 100% 100%;
-    margin-bottom: 0rem;
-    background-repeat: no-repeat; }
-    .mainFormaciones .backgroundFormaciones .tituloFormaciones {
-      padding: 2rem 2rem 6rem;
-      font-size: 1.3rem;
-      height: 75%;
-      width: 100%; }
-  .mainFormaciones .profesorado {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    justify-content: center;
-    align-content: center;
-    grid-template-areas: "prof__desc" "prof__ic1" "prof__ic2" "prof__ic3"; }
-    .mainFormaciones .profesorado .prof__desc {
-      grid-area: prof__desc;
-      padding: 0rem 1rem; }
-    .mainFormaciones .profesorado .prof__ic1 {
-      grid-area: prof__ic1; }
-    .mainFormaciones .profesorado .prof__ic2 {
-      grid-area: prof__ic2; }
-    .mainFormaciones .profesorado .prof__ic3 {
-      grid-area: prof__ic3; }
-    .mainFormaciones .profesorado h3 {
+  .mainIndex {
+    /**Formaciones**/
+    /**Horarios**/
+    /**Blog**/
+    /**Contacto**/ }
+    .mainIndex .backgroundIndex {
+      background-size: 100% 100%;
+      margin-bottom: 0rem;
+      background-repeat: no-repeat; }
+      .mainIndex .backgroundIndex .tituloIndex {
+        padding: 7rem 2rem 0rem;
+        font-size: 1.3rem;
+        height: 75%;
+        width: 100%; }
+    .mainIndex .articuloLogo .viryaArt {
+      background-color: #66b19f53;
+      background-image: none; }
+      .mainIndex .articuloLogo .viryaArt .virya {
+        font-size: 1rem;
+        width: 100%;
+        padding: 1rem 10%; }
+      .mainIndex .articuloLogo .viryaArt button a {
+        font-size: 1.5rem; }
+    .mainIndex .section-eventos .eventos-car {
+      size: 50% 50%;
       font-size: 1.5rem; }
-    .mainFormaciones .profesorado div h4 {
-      text-align: center; }
-  .mainFormaciones .autoconocimiento {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
-    justify-content: center;
-    align-content: center;
-    grid-template-areas: "auto__desc" "auto__img1";
-    margin-bottom: 5rem; }
-    .mainFormaciones .autoconocimiento .auto__desc {
-      grid-area: auto__desc;
-      margin: 1rem 5rem; }
-    .mainFormaciones .autoconocimiento .auto__img1 {
-      grid-area: auto__img1; }
-    .mainFormaciones .autoconocimiento .auto__img2 {
+      .mainIndex .section-eventos .eventos-car .text-car-desc .text-car {
+        font-size: 1rem; }
+      .mainIndex .section-eventos .eventos-car .carousel h4 {
+        font-family: amaranth;
+        font-size: 1.3rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0.125rem 0.125rem 0.125rem 0.125rem #333333;
+        background-color: rgba(255, 255, 255, 0.4); }
+      .mainIndex .section-eventos .eventos-car .carousel p {
+        font-family: amaranth;
+        font-size: 1.5rem;
+        font-weight: 100;
+        text-transform: none;
+        color: white;
+        text-shadow: 0.125rem;
+        background-color: rgba(255, 255, 255, 0.4); }
+      .mainIndex .section-eventos .eventos-car .carousel .carousel-item {
+        width: 15rem;
+        height: 100%;
+        overflow: hidden; }
+      .mainIndex .section-eventos .eventos-car .carousel .carousel-inner {
+        max-width: 15rem; }
+    .mainIndex .mainFormaciones .backgroundFormaciones {
+      background-size: 100% 100%;
+      margin-bottom: 0rem;
+      background-repeat: no-repeat; }
+      .mainIndex .mainFormaciones .backgroundFormaciones .tituloFormaciones {
+        padding: 2rem 2rem 6rem;
+        font-size: 1.3rem;
+        height: 75%;
+        width: 100%; }
+    .mainIndex .mainFormaciones .profesorado {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      justify-content: center;
+      align-content: center;
+      grid-template-areas: "prof__desc" "prof__ic1" "prof__ic2" "prof__ic3"; }
+      .mainIndex .mainFormaciones .profesorado .prof__desc {
+        grid-area: prof__desc;
+        padding: 2rem 0rem; }
+      .mainIndex .mainFormaciones .profesorado .prof__ic1 {
+        grid-area: prof__ic1; }
+        .mainIndex .mainFormaciones .profesorado .prof__ic1 .icono-prof {
+          size: 50% 50%; }
+      .mainIndex .mainFormaciones .profesorado .prof__ic2 {
+        grid-area: prof__ic2; }
+        .mainIndex .mainFormaciones .profesorado .prof__ic2 .icono-prof {
+          size: 50% 50%; }
+      .mainIndex .mainFormaciones .profesorado .prof__ic3 {
+        grid-area: prof__ic3; }
+        .mainIndex .mainFormaciones .profesorado .prof__ic3 .icono-prof {
+          size: 50% 50%; }
+      .mainIndex .mainFormaciones .profesorado h3 {
+        font-size: 1.5rem; }
+      .mainIndex .mainFormaciones .profesorado div h4 {
+        text-align: center; }
+    .mainIndex .mainFormaciones .autoconocimiento {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50% 50%;
+      justify-content: center;
+      align-content: center;
+      grid-template-areas: "auto__desc" "auto__img1";
+      margin-bottom: 5rem; }
+      .mainIndex .mainFormaciones .autoconocimiento .auto__desc {
+        grid-area: auto__desc;
+        margin: 1rem 2rem; }
+      .mainIndex .mainFormaciones .autoconocimiento .auto__img1 {
+        grid-area: auto__img1;
+        size: 50% 50%; }
+      .mainIndex .mainFormaciones .autoconocimiento .auto__img2 {
+        display: none; }
+      .mainIndex .mainFormaciones .autoconocimiento .auto__img3 {
+        display: none; }
+      .mainIndex .mainFormaciones .autoconocimiento h3 {
+        font-size: 1.5rem; }
+    .mainIndex .mainFormaciones .taller {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 30% 70%;
+      justify-content: center;
+      align-content: center;
+      grid-template-areas: "taller__desc" "taller__img1";
+      margin: 1.5rem 1rem;
+      background-color: #66b19f53;
+      background-image: none; }
+      .mainIndex .mainFormaciones .taller .taller__desc {
+        grid-area: taller__desc; }
+      .mainIndex .mainFormaciones .taller .taller__img1 {
+        grid-area: taller__img1;
+        height: 100%;
+        width: 100%; }
+      .mainIndex .mainFormaciones .taller .taller__img2 {
+        display: none; }
+      .mainIndex .mainFormaciones .taller h3 {
+        font-size: 1.5rem; }
+    .mainIndex .mainHorarios .backgroundHorarios {
+      background-size: 100% 100%;
+      margin-bottom: 0rem;
+      background-repeat: no-repeat; }
+      .mainIndex .mainHorarios .backgroundHorarios .tituloHorarios {
+        padding: 3rem 0rem 4rem 0rem;
+        text-align: center;
+        font-size: 1.3rem;
+        height: 75%;
+        width: 100%; }
+    .mainIndex .mainHorarios .grid .gridHorarios {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 6rem) 8rem repeat(4, 6rem) 8rem 6rem;
+      justify-content: center;
+      align-content: center;
+      grid-template-areas: "div1 div6" "div1 div14" "div2 div7" "div2 div12" "div2 div17" "div3 div8" "div3 div10" "div3 div15" "div4 div13" "div4 div18" "div5 div9" "div5 div11" "div5 div16" "div19 div20"; }
+      .mainIndex .mainHorarios .grid .gridHorarios .div21 {
+        display: none; }
+      .mainIndex .mainHorarios .grid .gridHorarios .div22 {
+        display: none; }
+      .mainIndex .mainHorarios .grid .gridHorarios .div23 {
+        display: none; }
+      .mainIndex .mainHorarios .grid .gridHorarios h3 {
+        font-size: 1.5rem;
+        padding-top: 2rem; }
+      .mainIndex .mainHorarios .grid .gridHorarios h4 {
+        font-size: 1.3rem; }
+      .mainIndex .mainHorarios .grid .gridHorarios h5 {
+        font-size: 1rem; }
+      .mainIndex .mainHorarios .grid .gridHorarios p {
+        font-size: 1rem; }
+    .mainIndex .mainBlog .backgroundBlog {
+      background-size: 100% 100%;
+      margin-bottom: 0rem;
+      background-repeat: no-repeat; }
+      .mainIndex .mainBlog .backgroundBlog .tituloBlog {
+        padding: 6rem 2rem 2rem;
+        font-size: 1.3rem;
+        height: 75%;
+        width: 100%; }
+    .mainIndex .mainBlog .articulos p {
       display: none; }
-    .mainFormaciones .autoconocimiento .auto__img3 {
-      display: none; }
-    .mainFormaciones .autoconocimiento h3 {
-      font-size: 1.5rem; }
-  .mainFormaciones .taller {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30% 70%;
-    justify-content: center;
-    align-content: center;
-    grid-template-areas: "taller__desc" "taller__img1";
-    margin: 1.5rem 1rem; }
-    .mainFormaciones .taller .taller__desc {
-      grid-area: taller__desc; }
-    .mainFormaciones .taller .taller__img1 {
-      grid-area: taller__img1;
+    .mainIndex .mainBlog .articulos .artImg {
       height: 100%;
       width: 100%; }
-    .mainFormaciones .taller .taller__img2 {
-      display: none; }
-    .mainFormaciones .taller h3 {
-      font-size: 1.5rem; }
-  /**Horarios**/
-  .mainHorarios .backgroundHorarios {
-    background-size: 100% 100%;
-    margin-bottom: 0rem;
-    background-repeat: no-repeat; }
-    .mainHorarios .backgroundHorarios .tituloHorarios {
-      padding: 3rem 0rem 4rem 0rem;
-      text-align: center;
-      font-size: 1.3rem;
-      height: 75%;
-      width: 100%; }
-  .mainHorarios .grid .gridHorarios {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 6rem) 8rem repeat(4, 6rem) 8rem 6rem;
-    justify-content: center;
-    align-content: center;
-    grid-template-areas: "div1 div6" "div1 div14" "div2 div7" "div2 div12" "div2 div17" "div3 div8" "div3 div10" "div3 div15" "div4 div13" "div4 div18" "div5 div9" "div5 div11" "div5 div16" "div19 div20"; }
-    .mainHorarios .grid .gridHorarios .div21 {
-      display: none; }
-    .mainHorarios .grid .gridHorarios .div22 {
-      display: none; }
-    .mainHorarios .grid .gridHorarios .div23 {
-      display: none; }
-    .mainHorarios .grid .gridHorarios h3 {
-      font-size: 1.5rem;
-      padding-top: 2rem; }
-    .mainHorarios .grid .gridHorarios h4 {
-      font-size: 1.3rem; }
-    .mainHorarios .grid .gridHorarios h5 {
-      font-size: 1rem; }
-    .mainHorarios .grid .gridHorarios p {
-      font-size: 1rem; }
-  /**Blog**/
-  .mainBlog .backgroundBlog {
-    background-size: 100% 100%;
-    margin-bottom: 0rem;
-    background-repeat: no-repeat; }
-    .mainBlog .backgroundBlog .tituloBlog {
-      padding: 6rem 2rem 2rem;
-      font-size: 1.3rem;
-      height: 75%;
-      width: 100%; }
-  .mainBlog .articulos p {
-    display: none; }
-  .mainBlog .articulos .artImg {
-    height: 100%;
-    width: 100%; }
-  /**Contacto**/
-  .mainContacto .backgroundContacto {
-    background-size: 100% 100%;
-    margin-bottom: 0rem;
-    background-repeat: no-repeat; }
-    .mainContacto .backgroundContacto .tituloContacto {
-      padding: 5rem 2rem 2rem;
-      font-size: 1.3rem;
-      height: 75%;
-      width: 100%; }
-  .mainContacto .contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.125rem; }
-    .mainContacto .contacto iframe {
-      width: 80%;
-      height: 100%; }
-    .mainContacto .contacto div ul {
-      flex-wrap: wrap; } }
+    .mainIndex .mainContacto .backgroundContacto {
+      background-size: 100% 100%;
+      margin-bottom: 0rem;
+      background-repeat: no-repeat; }
+      .mainIndex .mainContacto .backgroundContacto .tituloContacto {
+        padding: 5rem 2rem 2rem;
+        font-size: 1.3rem;
+        height: 75%;
+        width: 100%; }
+    .mainIndex .mainContacto .contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.125rem; }
+      .mainIndex .mainContacto .contacto iframe {
+        width: 80%;
+        height: 100%; }
+      .mainIndex .mainContacto .contacto div ul {
+        flex-wrap: wrap; } }
 
 @media (max-width: 320px) {
   /**Generales**/
@@ -913,7 +947,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
   width: 100%; }
   .navBar ul li a {
